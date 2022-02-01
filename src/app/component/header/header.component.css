@@ -5,3 +5,12 @@
     margin: 10px;
 }
 
+#pic{
+    width: 15%;
+    height: auto;
+    position: relative;
+    bottom: 70px;
+    left: 10px;
+    display: flex;
+    
+}
