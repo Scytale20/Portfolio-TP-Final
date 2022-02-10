@@ -5,13 +5,13 @@
       <a class="navbar-brand" href="#">
         <img
           class="rounded rounded-3"
-          src="https://test.argentinaprograma.inti.gob.ar/pluginfile.php/1/theme_moove/logo/1638311812/APLogo-20-20.png"
+          [src]="dataPortfolio.logo"
           alt="ArgProgLogo"
           width="60px"
           style="background-color: black"
         />
         <span style="font-size: smaller">
-          Argentina Programa- #YoProgramo
+          {{ dataPortfolio.tituloLogo }}
         </span>
       </a>
     </div>
@@ -65,11 +65,7 @@
   <div>
     <!--Banner-->
     <div>
-      <img
-        [src]="dataPortfolio.backImage"
-        class="img-fluid"
-        alt="/"
-      />
+      <img [src]="dataPortfolio.backImage" class="img-fluid" alt="/" />
     </div>
 
     <!--Foto-->
@@ -80,14 +76,12 @@
         alt="image"
         id="pic"
       />
-    </div>    
-  </div>
-  <div class="clearfix">
-    <div style="padding-bottom: 15px;">
-      <h3>{{dataPortfolio.name}}</h3>
-      <h4>{{dataPortfolio.title}}</h4>
     </div>
   </div>
-
-  
+  <div class="clearfix">
+    <div style="padding-bottom: 15px">
+      <h3>{{ dataPortfolio.name }}</h3>
+      <h4>{{ dataPortfolio.title }}</h4>
+    </div>
+  </div>
 </div>

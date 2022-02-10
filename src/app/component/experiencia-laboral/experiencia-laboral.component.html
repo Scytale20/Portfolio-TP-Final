@@ -1,1 +1,25 @@
-
+<div>
+  <div class="container my-3 border">
+    <h3>Experiencia</h3>
+    <div *ngFor="let experiencia of experiencia_list" class="row">
+      <div class="col-2 my-3 mx-3">
+        <a href="#">
+          <img
+            id="logoempresa"
+            [src]="experiencia.img"
+            alt="Logo Empresa"
+            class="img-fluid img-thumbnail"
+          />
+        </a>
+      </div>
+      <div class="col-8">
+        <h4>{{ experiencia.empresa }}</h4>
+        <p>{{ experiencia.task }}</p>
+        <p>
+          <time>{{ experiencia.start }}</time> -
+          <time>{{ experiencia.end }}</time>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
