@@ -11,14 +11,42 @@
       "task": "task 1",
       "img": "/assets/img/polipetrol.gif",
       "start": "2005",
-      "end":"2020"
+      "end": "2020"
     },
     {
       "empresa": "Wico Combustibles",
       "task": "task 1",
       "img": "/assets/img/wicocombustibles.webp",
       "start": "2020",
-      "end":"Actual"
+      "end": "Actual"
+    }
+  ],
+  "educacion": [
+    {
+      "institucion": "institucion1",
+      "estudios": "estudios1",
+      "img": "image",
+      "start": "Fecha ingreso",
+      "end": "Fecha egreso"
+    },
+    {
+      "institucion": "institucion2",
+      "estudios": "estudios2",
+      "img": "image",
+      "start": "Fecha ingreso",
+      "end": "Fecha egreso"
+    }
+  ],
+  "skills": [
+    {
+      "skill": "Html",
+      "percent": "70",
+      "img": "assets/img/html.png"
+    },
+    {
+      "skill": "CSS",
+      "percent": "50",
+      "img": "assets/img/CSS.png"
     }
   ]
 }

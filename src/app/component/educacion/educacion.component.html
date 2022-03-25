@@ -1,0 +1,26 @@
+<div>
+    <div class="container border">
+      <h3 class="mx-5">Educación</h3>
+      <div *ngFor="let edu of educacion_list" class="row">
+        <div class="col-2 my-3 mx-3">
+          <a href="#">
+            <img
+              id="logoempresa"
+              [src]="edu.img"
+              alt="Logo Institucion"
+              class="img-fluid img-thumbnail"
+            />
+          </a>
+        </div>
+        <div class="col-8">
+          <h4>{{ edu.institucion }}</h4>
+          <p>{{ edu.estudios }}</p>
+          <p>
+            <time>{{ edu.start }}</time> -
+            <time>{{ edu.end }}</time>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
