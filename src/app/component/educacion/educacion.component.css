@@ -1,0 +1,20 @@
+#logoinstitucion{
+    width: 80px;
+    height: auto;    
+    display: flex;
+    justify-content: center;
+    /*background-color: #e3f2fd;*/
+    
+    
+}
+
+/*Celu*/
+
+@media(max-width: 632px){
+    .row{       
+        flex-direction: column;        
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+}

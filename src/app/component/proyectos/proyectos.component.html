@@ -1,0 +1,18 @@
+<div class="container border">
+  <div class="row">
+    <div>
+      <h3 class="mx-5 section-title">Proyectos Personales</h3>
+    </div>
+    <div *ngFor="let proyecto of proyectos_list" class="col-4">
+      <div class="card" style="width: 18rem">
+        <img [src]="proyecto.img" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h4 class="card-title">{{ proyecto.proyecto }}</h4>
+          <p class="card-text">
+            {{ proyecto.descripcion }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

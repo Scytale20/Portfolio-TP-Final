@@ -1,18 +1,18 @@
 <div>
     <div class="container border">
-      <h3 class="mx-5">Educación</h3>
+      <h3 class="mx-5 section-title">Educación</h3>
       <div *ngFor="let edu of educacion_list" class="row">
-        <div class="col-2 my-3 mx-3">
+        <div class="col-2 my-3 mx-3 section-img">
           <a href="#">
             <img
-              id="logoempresa"
+              id="logoinstitucion"
               [src]="edu.img"
               alt="Logo Institucion"
               class="img-fluid img-thumbnail"
             />
           </a>
         </div>
-        <div class="col-8">
+        <div class="col-8 section-item">
           <h4>{{ edu.institucion }}</h4>
           <p>{{ edu.estudios }}</p>
           <p>

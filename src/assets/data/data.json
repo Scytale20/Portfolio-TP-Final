@@ -4,7 +4,7 @@
   "profImage": "/assets/img/profile.png",
   "title": "Full Stack developer Jr.",
   "logo": "https://test.argentinaprograma.inti.gob.ar/pluginfile.php/1/theme_moove/logo/1638311812/APLogo-20-20.png",
-  "tituloLogo": "Argentina Programa- #YoProgramo",
+  "tituloLogo": "Argentina Programa - #YoProgramo",
   "experiencia": [
     {
       "empresa": "Polipetrol S.A.",
@@ -47,6 +47,48 @@
       "skill": "CSS",
       "percent": "50",
       "img": "assets/img/CSS.png"
+    },
+    {
+      "skill": "Bootstrap",
+      "percent": "30",
+      "img": "assets/img/Bootstrap_logo.png"
+    },
+    {
+      "skill": "Git",
+      "percent": "65",
+      "img": "assets/img/git.png"
+    },
+    {
+      "skill": "JS",
+      "percent": "20",
+      "img": "assets/img/js.png"
+    },
+    {
+      "skill": "TS",
+      "percent": "22",
+      "img": "assets/img/TS.png"
+    },
+    {
+      "skill": "Angular",
+      "percent": "45",
+      "img": "assets/img/angular.png"
     }
-  ]
+  ],
+  "proyectos": [
+    {
+      "proyecto": "proyecto 1",
+      "descripcion": "Algo de texto descriptivo para el proyecto 1",
+      "img": "assets/img/project1.jpg"      
+    },
+    {
+      "proyecto": "proyecto 2",
+      "descripcion": "Algo de texto descriptivo para el proyecto 3",
+      "img": "assets/img/project2.jpg"      
+    },
+    {
+      "proyecto": "proyecto 2",
+      "descripcion": "Algo de texto descriptivo para el proyecto 2",
+      "img": "assets/img/project3.jpg"      
+    }
+  ]  
 }

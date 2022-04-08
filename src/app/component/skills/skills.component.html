@@ -1,20 +1,23 @@
-<div class="row">
-  <h3 class="mx-5 my-3">Hard & Soft Skills</h3>
-  <div *ngFor="let skill of skills_list" class="col-sm-4 col-md-4 col-lg-4">
-    <circle-progress
-      [percent]="skill.percent"
-      [radius]="80"
-      [imageSrc]="skill.img"
-      [showImage]="true"
-      [imageHeight]="80"
-      [imageWidth]="80"
-      [startFromZero]="true"
-      [outerStrokeWidth]="16"
-      [innerStrokeWidth]="8"
-      [outerStrokeColor]="'#78C000'"
-      [innerStrokeColor]="'#C7E596'"
-      [animation]="true"
-      [animationDuration]="800"
-    ></circle-progress>
+<div class="container my-3">
+  <div class="row border">
+    <h3 class="mx-5 my-3 section-title">Hard & Soft Skills</h3>
+    <div *ngFor="let skill of skills_list" class="text-center col-sm-6 col-md-4 col-lg-4">
+      <circle-progress
+        [percent]="skill.percent"
+        [radius]="50"
+        [imageSrc]="skill.img"
+        [showImage]="true"
+        [imageHeight]="50"
+        [imageWidth]="50"
+        [startFromZero]="true"
+        [outerStrokeWidth]="8"
+        [innerStrokeWidth]="8"
+        [outerStrokeColor]="'#4882c2'"
+        [outerStrokeGradientStopColor]="'#53a9ff'"
+        [innerStrokeColor]="'#e7e8ea'"
+        [animation]="true"
+        [animationDuration]="800"
+      ></circle-progress>
+    </div>
   </div>
 </div>
