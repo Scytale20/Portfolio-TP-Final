@@ -4,9 +4,12 @@
     display: flex;
     justify-content: center;
     /*background-color: #e3f2fd;*/
-    
-    
 }
+
+#logoempresa:hover{    
+    box-shadow: 0 10px 10px rgb(0 0 0 / 0.2);       
+}
+
 
 /*Celu */
 

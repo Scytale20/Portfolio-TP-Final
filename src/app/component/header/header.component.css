@@ -18,7 +18,12 @@
   left: 10px;
   z-index: 1;
   border: 7px solid #fefefe;
-  border-radius: 50%;
+  border-radius: 50%;  
+}
+
+#pic:hover{
+  box-shadow: 0 5px 5px rgb(0 0 0 / 0.2);
+  
 }
 
 /* Celu*/

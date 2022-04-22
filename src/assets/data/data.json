@@ -5,6 +5,7 @@
   "title": "Full Stack developer Jr.",
   "logo": "https://test.argentinaprograma.inti.gob.ar/pluginfile.php/1/theme_moove/logo/1638311812/APLogo-20-20.png",
   "tituloLogo": "Argentina Programa - #YoProgramo",
+  "acerca_de":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.", 
   "experiencia": [
     {
       "empresa": "Polipetrol S.A.",
@@ -23,9 +24,9 @@
   ],
   "educacion": [
     {
-      "institucion": "institucion1",
+      "institucion": "Universidad Nacional de Cuyo",
       "estudios": "estudios1",
-      "img": "image",
+      "img": "/assets/img/UNC.jpg",
       "start": "Fecha ingreso",
       "end": "Fecha egreso"
     },
@@ -82,12 +83,12 @@
     },
     {
       "proyecto": "proyecto 2",
-      "descripcion": "Algo de texto descriptivo para el proyecto 3",
+      "descripcion": "Algo de texto descriptivo para el proyecto 2",
       "img": "assets/img/project2.jpg"      
     },
     {
-      "proyecto": "proyecto 2",
-      "descripcion": "Algo de texto descriptivo para el proyecto 2",
+      "proyecto": "proyecto 3",
+      "descripcion": "Algo de texto descriptivo para el proyecto 3",
       "img": "assets/img/project3.jpg"      
     }
   ]  
