@@ -91,5 +91,10 @@
       "descripcion": "Algo de texto descriptivo para el proyecto 3",
       "img": "assets/img/project3.jpg"      
     }
-  ]  
+  ], 
+  "login":{
+    "usuario":"fede@gmail.com",
+    "password":"123456"
+    
+  }  
 }
