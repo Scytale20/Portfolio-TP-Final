@@ -1,8 +1,98 @@
-<div>
+<div id="educacion">
+  <!---------------------------------Modal------------------------------>
+
+  <div
+    class="modal fade"
+    id="educationForm"
+    tabindex="-1"
+    aria-labelledby="educationFormLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="educationFormLabel">Educacion</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <form [formGroup]="educationForm">
+            <input type="hidden" name="id" formControlName="id" />
+
+            <div class="row mb-3">
+              <label for="institucion" class="col-sm-2 col-form-label" 
+                >Institucion</label
+              >
+              <div class="col-sm-10">
+                <input
+                  type="text"
+                  name="institucion"
+                  formControlName="institucion"
+                  class="form-control"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="row mb-3">
+              <label for="estudios" class="col-sm-2 col-form-label"
+                >Estudios</label
+              >
+              <div class="col-sm-10">
+                <input
+                  type="text"
+                  name="estudios"
+                  formControlName="estudios"
+                  class="form-control"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="row mb-3">
+              <label for="img" class="col-sm-2 col-form-label">Imagen</label>
+              <div class="col-sm-10">
+                <input
+                  type="number"
+                  name="img"
+                  formControlName="img"
+                  class="form-control"
+                  required
+                />
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button
+            type="button"
+            class="btn btn-secondary"
+            data-bs-dismiss="modal"
+          >
+            Close
+          </button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--------------------------------Modalend----------------------------->
+
   <div class="container border section-border">
     <div class="section-title">
       <h3 class="mx-5 my-4 tittle">Educación</h3>
-      <button class="btn btn-plus mx-5"><i class="fa fa-plus"></i></button>
+      <button
+        class="btn btn-plus mx-5"
+        data-bs-toggle="modal"
+        data-bs-target="#educationForm"
+      >
+        <i class="fa fa-plus"></i>
+      </button>
     </div>
     <div *ngFor="let edu of educacion_list" class="row">
       <div class="col-2 my-3 mx-3 section-img">
@@ -20,7 +110,7 @@
           <h4>{{ edu.institucion }}</h4>
 
           <div class="btn-editar">
-            <button class="btn"><i class="fa fa-pen"></i></button>
+            <button class="btn" data-bs-toggle="modal" data-bs-target="#educationForm"><i class="fa fa-pen"></i></button>
             <button class="btn"><i class="fa fa-trash"></i></button>
           </div>
         </div>

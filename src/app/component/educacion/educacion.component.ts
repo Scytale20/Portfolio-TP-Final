@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { DatosService } from 'src/app/servicios/service.service';
 
 @Component({
@@ -7,8 +8,19 @@ import { DatosService } from 'src/app/servicios/service.service';
   styleUrls: ['./educacion.component.css']
 })
 export class EducacionComponent implements OnInit {
+  
   educacion_list:any;
-  constructor(private datosPortfolio: DatosService) { }
+  educationForm:FormGroup;
+  
+  constructor(private datosPortfolio: DatosService, private formbuilder:FormBuilder ) {
+    this.educationForm = this.formbuilder.group({
+      id:[''], 
+      institucion:['', [Validators.required]],
+      estudios:['', [Validators.required]],
+      img: ['', [Validators.required]], 
+      
+    })
+   }
 
   ngOnInit(): void {
     this.datosPortfolio.obtenerDatos().subscribe( data => {
