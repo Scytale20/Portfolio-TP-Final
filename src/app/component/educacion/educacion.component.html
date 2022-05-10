@@ -1,26 +1,35 @@
 <div>
-    <div class="container border section-border">
-      <h3 class="mx-5 my-3 section-title">Educación</h3>
-      <div *ngFor="let edu of educacion_list" class="row">
-        <div class="col-2 my-3 mx-3 section-img">
-          <a href="#">
-            <img
-              id="logoinstitucion"
-              [src]="edu.img"
-              alt="Logo Institucion"
-              class="img-fluid img-thumbnail"
-            />
-          </a>
-        </div>
-        <div class="col-8 section-item">
+  <div class="container border section-border">
+    <div class="section-title">
+      <h3 class="mx-5 my-4 tittle">Educación</h3>
+      <button class="btn btn-plus mx-5"><i class="fa fa-plus"></i></button>
+    </div>
+    <div *ngFor="let edu of educacion_list" class="row">
+      <div class="col-2 my-3 mx-3 section-img">
+        <a href="#">
+          <img
+            id="logoinstitucion"
+            [src]="edu.img"
+            alt="Logo Institucion"
+            class="img-fluid img-thumbnail"
+          />
+        </a>
+      </div>
+      <div class="col-8">
+        <div class="section-item">
           <h4>{{ edu.institucion }}</h4>
-          <p>{{ edu.estudios }}</p>
-          <p>
-            <time>{{ edu.start }}</time> -
-            <time>{{ edu.end }}</time>
-          </p>
+
+          <div class="btn-editar">
+            <button class="btn"><i class="fa fa-pen"></i></button>
+            <button class="btn"><i class="fa fa-trash"></i></button>
+          </div>
         </div>
+        <p>{{ edu.estudios }}</p>
+        <p>
+          <time>{{ edu.start }}</time> -
+          <time>{{ edu.end }}</time>
+        </p>
       </div>
     </div>
   </div>
-  
+</div>

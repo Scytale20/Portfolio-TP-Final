@@ -1,8 +1,14 @@
 <div class="container my-3">
   <div class="row border section-border">
-    <h3 class="mx-5 my-3 section-title">Hard & Soft Skills</h3>
-    <div *ngFor="let skill of skills_list" class="text-center col-sm-6 col-md-4 col-lg-4">
-      <circle-progress 
+    <div class="section-title">
+      <h3 class="mx-5 my-3">Hard & Soft Skills</h3>
+      <button class="btn btn-plus mx-5"><i class="fa fa-plus"></i></button>
+    </div>
+    <div
+      *ngFor="let skill of skills_list"
+      class="text-center col-sm-6 col-md-4 col-lg-4 section-item"
+    >
+      <circle-progress
         [percent]="skill.percent"
         [radius]="50"
         [imageSrc]="skill.img"
@@ -18,6 +24,10 @@
         [animation]="true"
         [animationDuration]="800"
       ></circle-progress>
+      <div class="btn-editar">
+        <button class="btn"><i class="fa fa-pen"></i></button>
+        <button class="btn"><i class="fa fa-trash"></i></button>
+      </div>
     </div>
   </div>
 </div>
