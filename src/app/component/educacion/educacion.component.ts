@@ -29,4 +29,8 @@ export class EducacionComponent implements OnInit {
     })
   }
 
+  onSubmit(){
+    return console.log(this.educationForm.value)
+  }
+
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup } from '@angular/forms';
 import { DatosService } from 'src/app/servicios/service.service';
 
 
@@ -9,10 +10,22 @@ import { DatosService } from 'src/app/servicios/service.service';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
+  
   dataPortfolio: any;
+  headerForm:FormGroup;
   
 
-  constructor(private datosPortfolio:DatosService ) { }
+  constructor(private datosPortfolio:DatosService, private formbuilder: FormBuilder) {
+    this.headerForm = this.formbuilder.group({
+      id:[''],
+      name:[''],
+      backImage:[''],
+      profImage:[''], 
+      tittle:[''],
+      logo:[''],
+      tituloLogo:[''],
+    })
+   }
 
   ngOnInit(): void {
     this.datosPortfolio.obtenerDatos().subscribe(data => {

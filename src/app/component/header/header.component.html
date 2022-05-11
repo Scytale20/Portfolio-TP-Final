@@ -1,4 +1,124 @@
-<div>
+<div id="header">
+
+  <!---------------------------------Modal------------------------------>
+  <div
+    class="modal fade"
+    id="headerForm"
+    tabindex="-1"
+    aria-labelledby="headerFormLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="headerFormLabel">
+            Header
+          </h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <form [formGroup]="headerForm">
+            <input type="hidden" name="id" formControlName="id" />
+
+            <div class="row mb-3">
+              <label for="name" class="col-sm-2 col-form-label"
+                >Nombre</label
+              >
+              <div class="col-sm-10">
+                <input
+                  type="text"
+                  name="name"
+                  formControlName="name"
+                  class="form-control"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="row mb-3">
+              <label for="backImage" class="col-sm-2 col-form-label">Banner</label>
+              <div class="col-sm-10">
+                <input
+                  type="text"
+                  name="backImage"
+                  formControlName="backImage"
+                  class="form-control"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="row mb-3">
+              <label for="profImage" class="col-sm-2 col-form-label">Profile Img</label>
+              <div class="col-sm-10">
+                <input
+                  type="text"
+                  name="profImage"
+                  formControlName="profImage"
+                  class="form-control"
+                  required
+                />
+              </div>
+            </div>            
+            <div class="row mb-3">
+              <label for="tittle" class="col-sm-2 col-form-label">Titulo</label>
+              <div class="col-sm-10">
+                <input
+                  type="text"
+                  name="tittle"
+                  formControlName="tittle"
+                  class="form-control"
+                  required
+                />
+              </div>
+            </div>            
+            <div class="row mb-3">
+              <label for="logo" class="col-sm-2 col-form-label">Logo</label>
+              <div class="col-sm-10">
+                <input
+                  type="text"
+                  name="logo"
+                  formControlName="logo"
+                  class="form-control"
+                  required
+                />
+              </div>
+            </div>            
+            <div class="row mb-3">
+              <label for="tituloLogo" class="col-sm-2 col-form-label">Titulo Logo</label>
+              <div class="col-sm-10">
+                <input
+                  type="text"
+                  name="tituloLogo"
+                  formControlName="tituloLogo"
+                  class="form-control"
+                  required
+                />
+              </div>
+            </div>            
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button
+            type="button"
+            class="btn btn-secondary"
+            data-bs-dismiss="modal"
+          >
+            Close
+          </button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--------------------------------Modalend----------------------------->
+
   <div>
     <nav class="navbar navbar-light border section-border">
       <!-- Logo Argentina programa -->
@@ -95,7 +215,7 @@
         alt="image"
         id="pic"
       />
-      <button class="btn btn-editar"><i class="fa fa-pen"></i></button>
+      <button class="btn btn-editar" data-bs-toggle="modal" data-bs-target="#headerForm"><i class="fa fa-pen"></i></button>
     </div>
   </div>
   <div class="clearfix container">

@@ -26,16 +26,13 @@ export class LoginComponent implements OnInit {
   }
 
   onSubmit(event:Event){
-    
-    console.log("funca!!")
     event.preventDefault;
-
-    this.authService.login(this.form.value).subscribe(
-      (response:any) => {
-        console.log(response);
-        
-      }
-    )
+    
+    this.authService.login(this.form.value)
+      return console.log(this.form.value)
+    
+      
+    
   }
 
   get Email(){

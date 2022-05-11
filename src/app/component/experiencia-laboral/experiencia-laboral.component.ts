@@ -7,6 +7,7 @@ import { DatosService } from 'src/app/servicios/service.service';
   templateUrl: './experiencia-laboral.component.html',
   styleUrls: ['./experiencia-laboral.component.css']
 })
+
 export class ExperienciaLaboralComponent implements OnInit {
   
   experiencia_list:any;
@@ -28,6 +29,8 @@ export class ExperienciaLaboralComponent implements OnInit {
       this.experiencia_list=data.experiencia
       console.log(data.experiencia)
   });
-}
-
+  }
+  onSubmit(){
+    console.log(this.experienciaForm.value)
+  }
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { DatosService } from 'src/app/servicios/service.service'; 
 
 @Component({
@@ -7,8 +8,18 @@ import { DatosService } from 'src/app/servicios/service.service';
   styleUrls: ['./skills.component.css']
 })
 export class SkillsComponent implements OnInit {
+  
   skills_list:any;
-  constructor(private datosPortfolio: DatosService) { }
+  skillForm:FormGroup;
+  
+  constructor(private datosPortfolio: DatosService, private formBuilder:FormBuilder) {
+    this.skillForm = this.formBuilder.group({
+      id:[''],
+      skill:['', [Validators.required]],
+      percent:['', [Validators.required]], 
+      img:['', [Validators.required]],
+    })
+   }
 
   ngOnInit(): void {
     this.datosPortfolio.obtenerDatos().subscribe(data => {
