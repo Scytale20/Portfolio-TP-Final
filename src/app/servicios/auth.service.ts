@@ -14,7 +14,7 @@ export class AuthService {
     return this.http.get<Boolean>('./assets/data/data.json',).pipe(
       tap((response:Boolean)=>{        
         if(response)
-        sessionStorage.setItem("usuario", "fede")
+        sessionStorage.setItem("usuario", "Scytale")
         
       })
     );

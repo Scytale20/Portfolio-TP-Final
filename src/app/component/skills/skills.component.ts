@@ -27,4 +27,8 @@ export class SkillsComponent implements OnInit {
     })
   }
 
+  onSubmit(){
+    console.log(this.skillForm.value)
+  }
+
 }

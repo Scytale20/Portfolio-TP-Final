@@ -26,4 +26,8 @@ export class InfoPersonalComponent implements OnInit {
     })
   }
 
+  onSubmit(){
+    console.log(this.infoForm.value);
+  }
+
 }

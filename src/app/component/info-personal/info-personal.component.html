@@ -19,24 +19,27 @@
           ></button>
         </div>
         <div class="modal-body">
-          <form [formGroup]="infoForm">
+          <form [formGroup]="infoForm" (ngSubmit)="onSubmit()">
             <input type="hidden" name="id" formControlName="id" />
-            
+
             <div class="mb-3">
-              <label for="info" class="form-label"></label>
-              <textarea class="form-control" id="id" placeholder="Igrese nueva Info" rows="10"></textarea>
-            </div>            
+              <label for="info" class="form-label"></label>                            
+              <textarea class="form-control" formControlName="info" rows="10" placeholder="Ingrese nueva Info"></textarea>
+            </div>
+            
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="submit" class="btn btn-primary">
+                Save changes
+              </button>
+            </div>
           </form>
-        </div>
-        <div class="modal-footer">
-          <button
-            type="button"
-            class="btn btn-secondary"
-            data-bs-dismiss="modal"
-          >
-            Close
-          </button>
-          <button type="button" class="btn btn-primary">Save changes</button>
         </div>
       </div>
     </div>
@@ -47,7 +50,13 @@
   <div class="container">
     <div class="section-title">
       <h2>Acerca de mi</h2>
-      <button class="btn btn-plus mx-5" data-bs-toggle="modal" data-bs-target="#infoForm"><i class="fa fa-pen"></i></button>
+      <button
+        class="btn btn-plus mx-5"
+        data-bs-toggle="modal"
+        data-bs-target="#infoForm"
+      >
+        <i class="fa fa-pen"></i>
+      </button>
     </div>
     <p>
       {{ acerca_de }}

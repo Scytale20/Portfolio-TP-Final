@@ -28,4 +28,8 @@ export class ProyectosComponent implements OnInit {
     });
   }
 
+  onSubmit(){
+    console.log(this.proyectoForm.value)
+  }
+
 }

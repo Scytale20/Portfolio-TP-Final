@@ -21,7 +21,7 @@
           ></button>
         </div>
         <div class="modal-body">
-          <form [formGroup]="skillForm">
+          <form [formGroup]="skillForm" (ngSubmit)="onSubmit()">
             <input type="hidden" name="id" formControlName="id" />
 
             <div class="row mb-3">
@@ -63,19 +63,20 @@
                   required
                 />
               </div>
-            </div>            
+            </div> 
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="submit" class="btn btn-primary">Save changes</button>
+            </div>           
           </form>
         </div>
-        <div class="modal-footer">
-          <button
-            type="button"
-            class="btn btn-secondary"
-            data-bs-dismiss="modal"
-          >
-            Close
-          </button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
+        
       </div>
     </div>
   </div>
